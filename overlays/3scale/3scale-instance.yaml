@@ -2,7 +2,6 @@ apiVersion: apps.3scale.net/v1alpha1
 kind: APIManager
 metadata:
   name: apimanager-sample
-  namespace: 3scale-dev
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
