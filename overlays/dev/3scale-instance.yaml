@@ -3,5 +3,7 @@ kind: APIManager
 metadata:
   name: apimanager-sample
   namespace: 3scale-dev
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   wildcardDomain: apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com
