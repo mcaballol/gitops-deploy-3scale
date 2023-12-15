@@ -29,6 +29,7 @@ resources:
 #- namespace.yaml
 - 3scale-instance.yaml
 - secret-s3-auth.yaml
-#- tenant/dev/tenant.yaml
+- tenant/dev/tenant.yaml
+- tenant/dev/dev-admin-secret.yaml
 # - sso-realms/test-client-testclient.yaml
 # - sso-realms/test-realm.yaml
