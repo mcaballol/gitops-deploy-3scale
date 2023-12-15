@@ -1,0 +1,7 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: apimanager-sample
+  namespace: 3scale-dev
+spec:
+  wildcardDomain: apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com
