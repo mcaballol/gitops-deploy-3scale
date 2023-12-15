@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   generation: 1
-  name: 3scale-dev
+  name: 3scale
   namespace: openshift-gitops
 spec:
   clusterResourceWhitelist:
@@ -20,21 +20,21 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
-  name: 3scale-dev
+  name: 3scale
   namespace: openshift-gitops
 spec:
   destination:
     name: ''
-    namespace: 3scale-dev
+    namespace: 3scale
     server: 'https://kubernetes.default.svc'
   source:
-    path: overlays/dev
+    path: overlays/3scale
 # we specify the folder for the files
     repoURL: 'https://github.com/mcaballol/gitops-deploy-3scale.git'
 # the repository url
     targetRevision: main
 # and branch, in this case HEAD / main 
-  project: 3scale-dev
+  project: 3scale
   syncPolicy:
     automated:
       prune: true
