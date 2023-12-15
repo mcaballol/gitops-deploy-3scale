@@ -17,7 +17,7 @@ patches:
 - patch: |-
     - op: add
       path: /spec/targetNamespaces/-
-      value: 3scale
+      value: 3scale-dev
   target:
     group: operators.coreos.com
     kind: OperatorGroup
