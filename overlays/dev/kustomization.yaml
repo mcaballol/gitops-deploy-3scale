@@ -28,5 +28,6 @@ patches:
 resources: 
 #- namespace.yaml
 - 3scale-instance.yaml
+- secret-s3-auth.yaml
 # - sso-realms/test-client-testclient.yaml
 # - sso-realms/test-realm.yaml

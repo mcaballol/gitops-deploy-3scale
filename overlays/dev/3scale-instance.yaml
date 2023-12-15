@@ -7,3 +7,8 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   wildcardDomain: apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com
+  system:
+    fileStorage:
+      simpleStorageService:
+        configurationSecretRef:
+          name: s3-auth
