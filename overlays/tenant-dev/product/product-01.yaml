@@ -4,4 +4,6 @@ metadata:
   name: product1-sample
 
 spec:
-  name: OperatedProduct 11002
+  name: OperatedProduct 11002 svc 5
+  providerAccountRef:
+    name: tenant-secret
