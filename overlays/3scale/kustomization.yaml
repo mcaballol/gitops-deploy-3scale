@@ -29,3 +29,4 @@ resources:
 #- namespace.yaml
 - 3scale-instance.yaml
 - secret-s3-auth.yaml
+- clusterrole.yaml
