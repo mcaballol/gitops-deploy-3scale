@@ -29,5 +29,6 @@ resources:
 #- namespace.yaml
 - tenant.yaml
 - dev-admin-secret.yaml
+- product
 # - sso-realms/test-client-testclient.yaml
 # - sso-realms/test-realm.yaml

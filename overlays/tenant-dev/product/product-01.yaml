@@ -1,0 +1,7 @@
+kind: Product
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: product1-sample
+
+spec:
+  name: OperatedProduct 1
