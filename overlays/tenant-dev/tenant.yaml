@@ -11,7 +11,7 @@ spec:
   organizationName: dev
   masterCredentialsRef:
     name: system-seed
-    namespace: 3scale-dev
+    namespace: 3scale
   passwordCredentialsRef:
     name: dev-admin-secret
   tenantSecretRef:
