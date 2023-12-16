@@ -16,3 +16,4 @@ spec:
     name: dev-admin-secret
   tenantSecretRef:
     name: tenant-secret
+    

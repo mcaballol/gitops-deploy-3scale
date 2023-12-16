@@ -31,5 +31,6 @@ resources:
 - dev-admin-secret.yaml
 - rolebinding.yaml
 - product/product-01.yaml
+- product/product-511.yaml
 # - sso-realms/test-client-testclient.yaml
 # - sso-realms/test-realm.yaml
