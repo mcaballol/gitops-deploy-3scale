@@ -1,0 +1,35 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  name: 3scale-operator
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: openshift-operators
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: base-operator
+# we specify the folder for the files
+    repoURL: 'https://github.com/mcaballol/gitops-deploy-3scale.git'
+# the repository url
+    targetRevision: main
+# and branch, in this case HEAD / main 
+  project: 3scale
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    retry:
+      limit: 10
+    managedNamespaceMetadata:
+      labels:
+        argocd.argoproj.io/managed-by: openshift-gitops
+      # annotations:
+      #   argocd.argoproj.io/sync-wave: "0"
+
+    syncOptions:
+    - CreateNamespace=true
