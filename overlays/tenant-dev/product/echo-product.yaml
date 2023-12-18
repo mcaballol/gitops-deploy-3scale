@@ -21,3 +21,10 @@ spec:
   backendUsages:
     echo_api_backend:
       path: /
+  deployment:
+    apicastSelfManaged:
+      stagingPublicBaseURL: "https://apis-3scale-dev-staging.apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com"
+      productionPublicBaseURL: "https://apis-3scale-dev.apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com"
+      authentication:
+        oidc:
+          issuerEndpoint: "https://testclient:7wyDCDc5yr6Nur1OD5bdHJQdUbRYIeRT@keycloak-rhsso-dev.apps.cluster-t2xqd.t2xqd.sandbox2018.opentlc.com/auth/realms/dev"
