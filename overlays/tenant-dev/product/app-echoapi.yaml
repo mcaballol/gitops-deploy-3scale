@@ -5,9 +5,9 @@ metadata:
   namespace: 3scale-dev
 spec:
   accountCR:
-    name: ecorp
-  applicationPlanName: plan01
-  description: 'testing application '
+   name: ecorp
+  applicationPlanName: plan_unlimited
+  description: 'testing application'
   name: testApp
   productCR:
     name: echo-api-product-sample
