@@ -1,7 +1,7 @@
 kind: DeveloperUser
 apiVersion: capabilities.3scale.net/v1beta1
 metadata:
-  name: ecorp-user
+  name: devuser
 spec:
   developerAccountRef:
     name: ecorp
