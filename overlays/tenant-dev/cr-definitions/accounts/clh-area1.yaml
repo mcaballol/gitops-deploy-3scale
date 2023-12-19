@@ -2,23 +2,23 @@
 kind: DeveloperAccount
 apiVersion: capabilities.3scale.net/v1beta1
 metadata:
-  name: clhqa
+  name: clh-area1
 spec:
-  orgName: clh
+  orgName: clh-area1
   providerAccountRef:
     name: dev-tenant-secret
 ---
 kind: DeveloperUser
 apiVersion: capabilities.3scale.net/v1beta1
 metadata:
-  name: qauserclh
+  name: user1-clh
 spec:
   developerAccountRef:
-    name: clhqa
-  email: clhqa@example.com
+    name: clh-area1
+  email: user1clh@example.com
+  role: admin
+  username: user1-clh
   passwordCredentialsRef:
     name: dev-user-secret
-  role: admin
-  username: qauserclh
   providerAccountRef:
     name: dev-tenant-secret

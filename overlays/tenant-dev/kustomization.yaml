@@ -27,20 +27,17 @@ kind: Kustomization
 
 resources: 
 - dev-user-secret.yaml
-- product/accountuser.yaml
-- product/accountuser1.yaml
 
+#accounts
+- cr-definitions/accounts/clh-area1.yaml
+- cr-definitions/accounts/clh-area2.yaml
 
-#- rolebinding.yaml
-#- product/product-01.yaml
-#- product/product-511.yaml
+#products
+- cr-definitions/products/echo-product.yaml
 
+#backends
+- cr-definitions/backends/echo-backend.yaml
 
-- product/echo-product.yaml
-- product/echo-backend.yaml
-##- product/account.yaml
+#applications
+- cr-definitions/applications/app-echoapi.yaml
 
-- product/app-echoapi.yaml
-#- product/user.yaml
-# - sso-realms/test-client-testclient.yaml
-# - sso-realms/test-realm.yaml

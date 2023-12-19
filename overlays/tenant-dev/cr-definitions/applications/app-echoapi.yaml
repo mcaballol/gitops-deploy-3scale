@@ -4,13 +4,13 @@ metadata:
   name: application-plan01
 spec:
   accountCR:
-   name: clhqa
+   name: clh-area1
   applicationPlanName: plan_unlimited
   description: 'testing application'
-  name: testAppqa
+  name: testApp-dev
   productCR:
     name: echo-api-product-sample
   suspend: false
   providerAccountRef:
     name: dev-tenant-secret
-    #namespace: 3scale
+ 
