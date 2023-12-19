@@ -1,14 +1,14 @@
 kind: DeveloperUser
 apiVersion: capabilities.3scale.net/v1beta1
 metadata:
-  name: devuser
+  name: devuserclh
 spec:
   developerAccountRef:
-    name: ecorp
+    name: clhdev
   email: ecorp@example.com
   passwordCredentialsRef:
     name: dev-user-secret
   role: admin
-  username: devuser
+  username: devuserclh
   providerAccountRef:
     name: tenant-secret

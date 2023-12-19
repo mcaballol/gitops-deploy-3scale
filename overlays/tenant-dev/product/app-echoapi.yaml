@@ -4,7 +4,7 @@ metadata:
   name: application-plan01
 spec:
   accountCR:
-   name: ecorp
+   name: clhdev
   applicationPlanName: plan_unlimited
   description: 'testing application'
   name: testApp

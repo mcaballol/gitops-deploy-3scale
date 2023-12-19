@@ -1,8 +1,8 @@
 kind: DeveloperAccount
 apiVersion: capabilities.3scale.net/v1beta1
 metadata:
-  name: ecorp
+  name: clhdev
 spec:
-  orgName: Ecorp
+  orgName: clh
   providerAccountRef:
     name: tenant-secret
