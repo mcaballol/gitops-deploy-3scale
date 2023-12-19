@@ -30,3 +30,8 @@ resources:
 - 3scale-instance.yaml
 - secret-s3-auth.yaml
 - clusterrole.yaml
+
+# dev tenant
+- dev-admin-secret.yaml
+- dev-tenant.yaml
+

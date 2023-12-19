@@ -21,4 +21,5 @@ spec:
   role: admin
   username: qauserclh
   providerAccountRef:
-    name: tenant-secret
+    name: dev-tenant-secret
+    #namespace: 3scale

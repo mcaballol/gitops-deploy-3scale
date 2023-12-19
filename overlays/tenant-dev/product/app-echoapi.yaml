@@ -12,4 +12,5 @@ spec:
     name: echo-api-product-sample
   suspend: false
   providerAccountRef:
-    name: tenant-secret
+    name: dev-tenant-secret
+    #namespace: 3scale

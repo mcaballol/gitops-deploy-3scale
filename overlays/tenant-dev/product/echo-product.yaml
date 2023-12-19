@@ -14,7 +14,8 @@ spec:
     plan_unlimited:
       name: Unlimited
   providerAccountRef:
-    name: tenant-secret
+    name: dev-tenant-secret
+    #namespace: 3scale
   name: Operated Product Echo API
   systemName: echo_api_product
   description: Echo API Product

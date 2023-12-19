@@ -26,12 +26,11 @@ kind: Kustomization
 
 
 resources: 
-#- namespace.yaml
-- tenant.yaml
-- dev-admin-secret.yaml
 - dev-user-secret.yaml
+- product/accountuser.yaml
 
-- rolebinding.yaml
+
+#- rolebinding.yaml
 #- product/product-01.yaml
 #- product/product-511.yaml
 
@@ -39,7 +38,7 @@ resources:
 - product/echo-product.yaml
 - product/echo-backend.yaml
 ##- product/account.yaml
-- product/accountuser.yaml
+
 #- product/app-echoapi.yaml
 #- product/user.yaml
 # - sso-realms/test-client-testclient.yaml
