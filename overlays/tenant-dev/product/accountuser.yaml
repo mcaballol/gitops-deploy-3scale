@@ -6,7 +6,8 @@ metadata:
 spec:
   orgName: clh
   providerAccountRef:
-    name: tenant-secret
+    name: dev-tenant-secret
+    namespace: 3scale
 ---
 kind: DeveloperUser
 apiVersion: capabilities.3scale.net/v1beta1
