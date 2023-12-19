@@ -7,7 +7,7 @@ spec:
    name: clh-area2
   applicationPlanName: plan_basic
   description: 'testing application'
-  name: testApp-dev
+  name: testApp-basic-dev
   productCR:
     name: echo-api-product-sample
   suspend: false
