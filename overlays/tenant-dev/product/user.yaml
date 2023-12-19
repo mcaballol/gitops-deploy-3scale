@@ -7,6 +7,6 @@ spec:
     name: ecorp
   email: ecorp@example.com
   passwordCredentialsRef:
-    name: dev-devuser-secret
+    name: dev-user-secret
   role: admin
   username: devuser
