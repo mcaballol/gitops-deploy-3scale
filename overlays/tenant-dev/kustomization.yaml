@@ -32,7 +32,11 @@ resources:
 - rolebinding.yaml
 - product/product-01.yaml
 - product/product-511.yaml
+
+
 - product/echo-product.yaml
 - product/echo-backend.yaml
+- product/account.yaml
+- product/app-echoapi.yaml
 # - sso-realms/test-client-testclient.yaml
 # - sso-realms/test-realm.yaml
