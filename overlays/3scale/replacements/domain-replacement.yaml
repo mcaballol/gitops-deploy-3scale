@@ -1,0 +1,15 @@
+source:
+  kind: ConfigMap
+  name: image-tag-var
+  fieldPath: data.IMAGETAG
+  version: v1
+targets:
+- select:
+    name: my-deployment
+    kind: Deployment
+  fieldPaths:
+    - spec.template.spec.containers.[name=my-container].image
+  options:
+    delimiter: ':'
+    index: 1
+    create: true

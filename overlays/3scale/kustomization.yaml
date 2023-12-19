@@ -23,16 +23,17 @@ kind: Kustomization
 #     kind: OperatorGroup
 #     name: 3scale
 #     version: v1
-
+# replacements:
+#   - path: image-tag-replacement.yaml
 
 resources: 
 #- namespace.yaml
-- 3scale-instance.yaml
-- secret-s3-auth.yaml
-- clusterrole.yaml
+- resources/3scale-instance.yaml
+- resources/secret-s3-auth.yaml
+- resources/clusterrole.yaml
 
 # dev tenant
-- dev-tenant-namespace.yaml
-- dev-admin-secret.yaml
-- dev-tenant.yaml
+- resources/dev-tenant-namespace.yaml
+- resources/dev-admin-secret.yaml
+- resources/dev-tenant.yaml
 
