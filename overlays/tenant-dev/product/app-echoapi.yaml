@@ -4,10 +4,10 @@ metadata:
   name: application-plan01
 spec:
   accountCR:
-   name: clhdev
+   name: clhqa
   applicationPlanName: plan_unlimited
   description: 'testing application'
-  name: testApp
+  name: testAppqa
   productCR:
     name: echo-api-product-sample
   suspend: false
