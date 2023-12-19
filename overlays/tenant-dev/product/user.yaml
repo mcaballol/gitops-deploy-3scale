@@ -10,3 +10,5 @@ spec:
     name: dev-user-secret
   role: admin
   username: devuser
+  providerAccountRef:
+    name: tenant-secret
