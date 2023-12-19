@@ -1,0 +1,16 @@
+kind: Application
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: application-plan02
+spec:
+  accountCR:
+   name: clh-area2
+  applicationPlanName: plan_basic
+  description: 'testing application'
+  name: testApp-dev
+  productCR:
+    name: echo-api-product-sample
+  suspend: false
+  providerAccountRef:
+    name: dev-tenant-secret
+ 

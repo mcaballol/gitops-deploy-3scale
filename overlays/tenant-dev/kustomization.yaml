@@ -39,5 +39,5 @@ resources:
 - cr-definitions/backends/echo-backend.yaml
 
 #applications
-- cr-definitions/applications/app-echoapi.yaml
-
+- cr-definitions/applications/app-echoapi-basic.yaml
+- cr-definitions/applications/app-echoapi-unlimited.yaml
