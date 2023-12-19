@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  wildcardDomain: apps.cluster-v2pdq.v2pdq.sandbox2054.opentlc.com
+  wildcardDomain: apps.cluster-t2xqd.t2xqd.sandbox2018.opentlc.com
   system:
     fileStorage:
       simpleStorageService:
