@@ -28,6 +28,7 @@ kind: Kustomization
 resources: 
 - dev-user-secret.yaml
 - product/accountuser.yaml
+- product/accountuser1.yaml
 
 
 #- rolebinding.yaml

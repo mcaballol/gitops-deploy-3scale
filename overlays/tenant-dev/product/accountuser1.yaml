@@ -1,0 +1,24 @@
+---
+kind: DeveloperAccount
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: rh
+spec:
+  orgName: rh
+  providerAccountRef:
+    name: dev-tenant-secret
+---
+kind: DeveloperUser
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: rhuser
+spec:
+  developerAccountRef:
+    name: rh
+  email: rhuser@example.com
+  passwordCredentialsRef:
+    name: dev-user-secret
+  role: admin
+  username: rhuser
+  providerAccountRef:
+    name: dev-tenant-secret
