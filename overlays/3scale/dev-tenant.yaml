@@ -16,5 +16,5 @@ spec:
     name: dev-admin-secret
   tenantSecretRef:
     name: dev-tenant-secret
-    namespace: 3scale-dev
+  #  namespace: 3scale-dev
     
