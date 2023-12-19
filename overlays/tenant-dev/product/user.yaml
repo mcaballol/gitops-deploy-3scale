@@ -5,7 +5,7 @@ metadata:
 spec:
   developerAccountRef:
     name: clhdev
-  email: ecorp@example.com
+  email: clhdev@example.com
   passwordCredentialsRef:
     name: dev-user-secret
   role: admin
