@@ -39,7 +39,7 @@ resources:
 - product/echo-product.yaml
 - product/echo-backend.yaml
 ##- product/account.yaml
-#- product/accountuser.yaml
+- product/accountuser.yaml
 #- product/app-echoapi.yaml
 #- product/user.yaml
 # - sso-realms/test-client-testclient.yaml
