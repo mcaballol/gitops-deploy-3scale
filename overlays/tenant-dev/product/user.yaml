@@ -1,0 +1,12 @@
+kind: DeveloperUser
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: ecorp-user
+spec:
+  developerAccountRef:
+    name: ecorp
+  email: ecorp@example.com
+  passwordCredentialsRef:
+    name: dev-devuser-secret
+  role: admin
+  username: devuser
