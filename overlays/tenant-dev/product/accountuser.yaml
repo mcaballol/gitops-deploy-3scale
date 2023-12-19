@@ -22,4 +22,4 @@ spec:
   username: qauserclh
   providerAccountRef:
     name: dev-tenant-secret
-    #namespace: 3scale
+    namespace: 3scale

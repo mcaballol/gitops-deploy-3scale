@@ -32,7 +32,7 @@ resources:
 - clusterrole.yaml
 
 # dev tenant
-- dev-tenant-namespace.yaml
+#- dev-tenant-namespace.yaml
 - dev-admin-secret.yaml
 - dev-tenant.yaml
 
