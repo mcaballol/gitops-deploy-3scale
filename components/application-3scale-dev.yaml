@@ -20,7 +20,7 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
-  name: 3scale-tenant-dev
+  name: 3scale-api-dev-declations
   namespace: openshift-gitops
 spec:
   destination:
@@ -28,7 +28,7 @@ spec:
     namespace: 3scale-dev
     server: 'https://kubernetes.default.svc'
   source:
-    path: overlays/tenant-dev
+    path: overlays/api-dev-declarations
 # we specify the folder for the files
     repoURL: 'https://github.com/mcaballol/gitops-deploy-3scale.git'
 # the repository url
