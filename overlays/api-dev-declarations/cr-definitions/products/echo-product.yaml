@@ -29,4 +29,4 @@ spec:
       authentication:
         oidc:
           issuerType: "keycloak"
-          issuerEndpoint: "https://testclient:7wyDCDc5yr6Nur1OD5bdHJQdUbRYIeRT@keycloak-rhsso-dev.apps.cluster-8dmxj.8dmxj.sandbox2653.opentlc.com/auth/realms/test"
+          issuerEndpoint: "https://testclient:7wyDCDc5yr6Nur1OD5bdHJQdUbRYIeRT@keycloak-rhsso-dev.apps.cluster-wd6jh.wd6jh.sandbox388.opentlc.com/auth/realms/test"
