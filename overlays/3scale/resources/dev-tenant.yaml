@@ -7,7 +7,8 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   username: admin
-  systemMasterUrl: https://master.apps.cluster-t2xqd.t2xqd.sandbox2018.opentlc.com
+  #systemMasterUrl: https://master.apps.cluster-t2xqd.t2xqd.sandbox2018.opentlc.com
+  systemMasterUrl: https://master.$(DOMAIN)
   email: admin@ecorp.com
   organizationName: dev
   masterCredentialsRef:
