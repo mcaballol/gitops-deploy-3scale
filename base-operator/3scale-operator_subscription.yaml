@@ -6,6 +6,8 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 # sync wave 2 since we need the Namespace and OperatorGroup and so on...
   name: 3scale-operator
+  namespace: openshift-operators
+
 spec:
   channel: threescale-2.14
   installPlanApproval: Automatic
