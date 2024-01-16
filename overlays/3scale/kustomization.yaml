@@ -4,8 +4,8 @@ bases:
   - ../../base-operator
 configurations:
   - config.yaml
-# generatorOptions:
-#  disableNameSuffixHash: true
+generatorOptions:
+ disableNameSuffixHash: true
 # secretGenerator:
 # - name: keycloak-db-secret
 #   envs:
@@ -13,6 +13,10 @@ configurations:
 # - name: credential-keycloak
 #   envs:
 #   - env/sso-credential.env
+configMapGenerator:
+- name: keycloak-db-secret
+  files:
+  - resources/certs/zync.pem
 
 # patches:
 # - patch: |-
