@@ -14,7 +14,7 @@ generatorOptions:
 #   envs:
 #   - env/sso-credential.env
 configMapGenerator:
-- name: keycloak-db-secret
+- name: zync-ca-bundle
   files:
   - resources/certs/zync.pem
 
