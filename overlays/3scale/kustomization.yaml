@@ -40,8 +40,10 @@ patches:
       group: apps.openshift.io
       version: v1
       kind: DeploymentConfig
+      namespace: 3scale
       name: zync-que
-   path: resources/patches/zync-que-patchfile.yaml
+      labelSelector: "threescale_component_element=zync-que"
+   path: resources/patches/zync-que.yaml
 
 # replacements:
 #   - path: image-tag-replacement.yaml
