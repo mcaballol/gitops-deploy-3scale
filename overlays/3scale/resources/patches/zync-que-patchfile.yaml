@@ -1,0 +1,11 @@
+
+- op: add #action
+  path: "/spec/template/spec/volumes" #resouirce we want to change
+  value:             #value we want to use for patching
+    - name: zync-ca-bundle
+      configMap:
+        name: zync-ca-bundle
+        items:
+          - key: zync.pem
+            path: zync.pem
+        defaultMode: 420

@@ -35,8 +35,14 @@ configMapGenerator:
 #     kind: DeploymentConfig
 #     name: zync-que
 #     version: v1
-patchesStrategicMerge:
-  - resources/patches/zync-que.yaml
+patches:
+ - target:
+      group: apps.openshift.io
+      version: v1
+      kind: DeploymentConfig
+      name: zync-que
+   path: resources/patches/zync-que-patchfile.yaml
+
 # replacements:
 #   - path: image-tag-replacement.yaml
 
