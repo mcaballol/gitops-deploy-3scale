@@ -21,7 +21,7 @@ configMapGenerator:
 patches:
 - patch: |-
     - op: add
-      path: /spec/template/spec/volume-
+      path: /spec/template/spec/volumes-
       value: 
         - name: zync-ca-bundle
           configMap:
