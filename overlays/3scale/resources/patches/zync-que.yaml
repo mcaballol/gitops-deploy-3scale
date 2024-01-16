@@ -1,0 +1,23 @@
+---
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  name: zync-que
+spec:
+  template:
+    spec:
+      containers:
+        - name: que
+          volumeMounts:
+            - name: zync-ca-bundle
+              mountPath: /etc/pki/tls/zync/zync.pem
+              subPath: zync.pem
+
+      volumes:
+        - name: zync-ca-bundle
+          configMap:
+            name: zync-ca-bundle
+            items:
+              - key: zync.pem
+                path: zync.pem
+            defaultMode: 420

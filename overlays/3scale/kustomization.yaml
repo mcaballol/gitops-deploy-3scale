@@ -18,24 +18,25 @@ configMapGenerator:
   files:
   - resources/certs/zync.pem
 
-patches:
-- patch: |-
-    - op: add
-      path: /spec/template/spec/volumes-
-      value: 
-        - name: zync-ca-bundle
-          configMap:
-            name: zync-ca-bundle
-            items:
-              - key: zync.pem
-                path: zync.pem
-            defaultMode: 420
-  target:
-    group: apps.openshift.io
-    kind: DeploymentConfig
-    name: zync-que
-    version: v1
-
+# patches:
+# - patch: |-
+#     - op: add
+#       path: /spec/template/spec/volumes-
+#       value: 
+#         - name: zync-ca-bundle
+#           configMap:
+#             name: zync-ca-bundle
+#             items:
+#               - key: zync.pem
+#                 path: zync.pem
+#             defaultMode: 420
+#   target:
+#     group: apps.openshift.io
+#     kind: DeploymentConfig
+#     name: zync-que
+#     version: v1
+patchesStrategicMerge:
+  - resources/patches/zync-que.yaml
 # replacements:
 #   - path: image-tag-replacement.yaml
 
